@@ -1,0 +1,45 @@
+{
+  "name": "procura-certo",
+  "license": "0BSD",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "homepage": "https://seu-usuario.github.io/nome-do-repositorio",
+  "dependencies": {
+    "@expo/metro-runtime": "~6.1.1",
+    "@expo/vector-icons": "^15.0.2",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@react-navigation/drawer": "^7.5.7",
+    "@react-navigation/native": "^7.1.17",
+    "@react-navigation/stack": "^7.4.7",
+    "expo": "^54.0.1",
+    "expo-asset": "^12.0.8",
+    "expo-blur": "~15.0.6",
+    "expo-image": "~3.0.7",
+    "expo-linking": "~8.0.7",
+    "expo-status-bar": "~3.0.7",
+    "firebase": "^12.1.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-native": "0.81.4",
+    "react-native-bootsplash": "^6.3.10",
+    "react-native-gesture-handler": "~2.28.0",
+    "react-native-reanimated": "~4.1.0",
+    "react-native-safe-area-context": "^5.6.1",
+    "react-native-vector-icons": "^10.3.0",
+    "react-native-web": "^0.21.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "gh-pages": "^6.3.0"
+  },
+  "private": true
+}

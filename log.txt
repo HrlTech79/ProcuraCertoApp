@@ -1,0 +1,39 @@
+ // Função para mostrar detalhes de debug
+  const showDebugInfo = () => {
+    Alert.alert(
+      "Debug Info",
+      `App ID: ${appId}\n` +
+        `Featured Professionals: ${featuredProfessionals.length}\n` +
+        `Loading: ${loadingFeatured}\n` +
+        `Error: ${errorMessage || "Nenhum"}`
+    );
+  };
+
+  =====================================================================
+
+   debugButton: {
+    backgroundColor: "#ff6b6b",
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: 4,
+    marginRight: 10,
+  },
+  debugButtonText: {
+    color: "#fff",
+    fontSize: 12,
+    fontWeight: "bold",
+  },
+
+  ======================================================================
+
+      <View style={styles.headerRight}>
+          <TouchableOpacity style={styles.debugButton} onPress={showDebugInfo}>
+            <Text style={styles.debugButtonText}>Debug</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.menuIcon}
+            onPress={() => setIsMenuModalVisible(true)}
+          >
+            <Text style={styles.menuText}>&#9776;</Text>
+          </TouchableOpacity>
+        </View>
